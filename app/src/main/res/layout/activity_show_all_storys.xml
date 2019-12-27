@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/ColorBackgroundAttr"
+    android:orientation="vertical"
+    tools:context=".ShowAllStorys">
+    <include layout="@layout/support_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/sliderPager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/sliderTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            app:tabBackground="@drawable/indicator_style"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PersonRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:layout_gravity="bottom"
+            layout="@layout/footer_layout"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

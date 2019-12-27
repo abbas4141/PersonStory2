@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6969</color>
+    <color name="colorPrimaryDark">#FC4545</color>
+    <color name="colorAccent">#FF6969</color>
+
+
+    <color name="colorMain">#FF6969</color>
+    <color name="colorBtnPressed">#FC4545</color>
+    <color name="colorTitle">#FF6969</color>
+    <color name="colorSubTitle">#515C6F</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <!--    ///////////////////////////////-->
+    <color name="colorMainN">#D3FF69</color>
+    <color name="colorTitleN">#D3FF69</color>
+    <color name="colorSubTitleN">#A8ADB7</color>
+    <color name="colorBackgroundN">#515C6F</color>
+    <color name="colorBtnPressedN">#C7FC47</color>
+
+
+</resources>

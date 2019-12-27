@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PersonStory</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="stay_singed_in">Stay Singed In</string>
+    <string name="login">LogIn</string>
+    <string name="browse_image"><u>Browse Image</u></string>
+    <string name="change_theme">Change Theme</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="person_name">Person Name</string>
+    <string name="state_of_person">state of person</string>
+    <string name="add_person">Add Person</string>
+    <string name="enter_your_state">Enter your state</string>
+    <string name="loading">Loading ...</string>
+
+</resources>

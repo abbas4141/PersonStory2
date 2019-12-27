@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sliderImage"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/personNameSlider"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/bau"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="?attr/ColorTitleAttr"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/bau"
+            android:textSize="16sp"
+            android:textColor="?attr/ColorTitleAttr"
+            android:layout_height="wrap_content"
+            android:id="@+id/personStateSlider"
+            android:layout_marginStart="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/bau"
+            android:textColor="?attr/ColorTitleAttr"
+            android:layout_height="wrap_content"
+            android:id="@+id/personIdSlider"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</FrameLayout>

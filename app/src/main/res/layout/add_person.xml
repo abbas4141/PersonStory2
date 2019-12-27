@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="310dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layoutDirection="ltr"
+        android:background="@drawable/round_dialog"
+        android:minWidth="335dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/bau"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/add_person"
+            android:textStyle="bold"
+            android:textColor="?attr/ColorSubTitleAttr"
+            android:textSize="33sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_name"
+            android:gravity="left"
+            android:textColorHint="?attr/ColorTitleAttr"
+            app:errorEnabled="true"
+            tools:ignore="HardcodedText">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bau"
+                android:layout_margin="8dp"
+                android:gravity="left"
+                android:backgroundTint="?attr/ColorTitleAttr" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/ColorTitleAttr"
+            android:hint="@string/enter_your_state"
+            android:gravity="left"
+            android:textColorHint="?attr/ColorTitleAttr">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPersonState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bau"
+                android:layout_margin="8dp"
+                android:gravity="left"
+                android:backgroundTint="?attr/ColorTitleAttr" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:onClick="getImageFromGallary"
+            android:id="@+id/getImageFromGallary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bau"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/browse_image"
+            android:textColor="?attr/ColorTitleAttr"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="15dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/personImageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="?attr/ColorBackgroundAttr"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnDialogPerson"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/terminat"
+            android:background="@drawable/circular_btn"
+            android:drawableEnd="@drawable/go"
+            android:elevation="0dp"
+            android:paddingEnd="10dp"
+            android:text="@string/add_person"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="dstyle">
+        <attr name="ColorTitleAttr" format="color" />
+        <attr name="ColorSubTitleAttr" format="color" />
+        <attr name="ColorBackgroundAttr" format="color" />
+        <attr name="ColorMainAttr" format="color" />
+        <attr name="ColorBtnPressedAttr" format="color" />
+    </declare-styleable>
+
+</resources>

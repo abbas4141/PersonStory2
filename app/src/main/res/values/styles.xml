@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        /////////////////////////////-->
+
+        <item name="ColorTitleAttr">@color/colorTitle</item>
+        <item name="ColorSubTitleAttr">@color/colorSubTitle</item>
+        <item name="ColorBackgroundAttr">@color/colorBackground</item>
+        <item name="ColorMainAttr">@color/colorMain</item>
+        <item name="ColorBtnPressedAttr">@color/colorBtnPressed</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMainN</item>
+        <item name="colorPrimaryDark">@color/colorBtnPressedN</item>
+        <item name="colorAccent">@color/colorMainN</item>
+<!--        /////////////////////////////////////-->
+        <item name="ColorTitleAttr">@color/colorTitleN</item>
+        <item name="ColorSubTitleAttr">@color/colorSubTitleN</item>
+        <item name="ColorBackgroundAttr">@color/colorBackgroundN</item>
+        <item name="ColorMainAttr">@color/colorMainN</item>
+        <item name="ColorBtnPressedAttr">@color/colorBtnPressedN</item>
+    </style>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/ColorBackgroundAttr"
+    tools:context=".LogIn">
+
+    <include layout="@layout/support_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bau"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/terminat"
+            android:id="@+id/titlePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="?ColorTitleAttr"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_name"
+            android:backgroundTint="?attr/ColorSubTitleAttr"
+            android:gravity="left"
+            android:textColorHint="?attr/ColorSubTitleAttr"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/ColorSubTitleAttr"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bau"
+                android:gravity="left"
+                android:backgroundTint="?attr/ColorTitleAttr"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordInputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:backgroundTint="?attr/ColorSubTitleAttr"
+                    android:textColorHint="?attr/ColorSubTitleAttr"
+                    app:counterMaxLength="8"
+                    android:gravity="left"
+                    android:hint="@string/enter_your_password"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextUserPassword"
+                        android:textColor="?attr/ColorSubTitleAttr"
+                        android:textColorHint="?attr/ColorTitleAttr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bau"
+                        android:layout_margin="10dp"
+                        android:gravity="left"
+                        android:backgroundTint="?attr/ColorTitleAttr"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkboxStay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:buttonTint="?attr/ColorMainAttr"-->
+<!--            android:text="@string/stay_singed_in"-->
+<!--            android:textColor="?attr/ColorMainAttr"-->
+<!--            android:textSize="24sp" />-->
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:fontFamily="@font/terminat"
+            android:onClick="Login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:background="@drawable/circular_btn"
+            android:drawableEnd="@drawable/go"
+            android:elevation="0dp"
+            android:paddingEnd="10dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/ColorBackgroundAttr"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include layout="@layout/support_toolbar"/>
+
+<!--    <com.jgabrielfreitas.core.BlurImageView-->
+<!--        android:id="@+id/BlurImageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/person_icon" />-->
+
+<!--    <include layout="@layout/support_toolbar" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/terminat"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:background="@drawable/circular_btn"
+            android:drawableEnd="@drawable/go"
+            android:elevation="0dp"
+            android:paddingEnd="10dp"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:fontFamily="@font/terminat"
+            android:background="@drawable/circular_btn"
+            android:drawableEnd="@drawable/go"
+            android:elevation="0dp"
+            android:paddingEnd="10dp"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
